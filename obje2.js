@@ -53,10 +53,12 @@ users[1].email
 
 // console.log(Object.keys(tinderUser));
 // console.log(Object.values(tinderUser));
-// console.log(Object.entries(tinderUser));
+// console.log(Object.entries(tinderUser));  // makes array of arrays [["id" , "123abc"], []]
 
-// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));  // property available or not
 
+
+        // destructuring in objects
 
 const course = {
     coursename: "js in hindi",
@@ -70,6 +72,9 @@ const {courseInstructor: instructor} = course
 
 // console.log(courseInstructor);
 console.log(instructor);
+
+                        //// json
+                        key - value - string
 
 // {
 //     "name": "hitesh",

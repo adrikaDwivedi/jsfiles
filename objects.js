@@ -32,6 +32,10 @@ jsUser.greeting  = function(){
 console.log(jsUser.greeting);
 console.log(jsUser.greeting());
 
+Object.freeze(jsUser) // freeze the object so no changes can be made
 
+
+const tinderObj = new Object();    , Object.create() // singleton
+const tinderObj = { }  // non singleton
 
 

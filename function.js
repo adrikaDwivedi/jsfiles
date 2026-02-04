@@ -1,4 +1,4 @@
-
+///// main diff bw arrow fn and normal fn is uage of this keyworkd , "this" binds different in both of them 
 function sayMyName(){
     console.log("H");
     console.log("I");

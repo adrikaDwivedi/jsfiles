@@ -8,7 +8,7 @@ let lastName;
 
 console.table([name , age , email , city , lastName])
 
-// name = "Ayush" 
+//name = "Ayush" 
 /* 
 prefer not to use var in modern JavaScript
 as it has function scope and can lead to unexpected behavior.
