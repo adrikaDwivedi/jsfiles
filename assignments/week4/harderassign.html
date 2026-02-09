@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>;
+        
+       async function calculate(){
+            let p = document.getElementById('principal').value
+            let r = document.getElementById('rate').value
+            let t = document.getElementById('time').value
+
+            console.log(si);            
+        
+        try {
+        let response = await fetch('http://localhost:3000/calculate-si', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ p, r, t })
+        });
+
+        let data = await response.json();
+
+        // backend-calculated SI
+        document.getElementById('si').innerHTML = data.si;
+
+    } catch (error) {
+        console.log(error);
+    }
+        }
+    </script>
+</head>
+<body>
+    <input type = "number" placeholder="principal" id="principal"> <br></br>
+    <input type = "number" placeholder="rate" id="rate"><br></br>
+    <input type = "number" placeholder="time" id="time"><br></br>
+
+    <button  onclick="calculate()" id="si"> Calculate Simple interest</button>
+</body>
+</html>
